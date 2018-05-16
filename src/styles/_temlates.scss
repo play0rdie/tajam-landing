@@ -1,0 +1,36 @@
+.main-btn {
+    color: $main-color;
+    border-color: $main-color;
+    text-transform: uppercase;
+    margin-bottom: 2vh;
+    &:hover {
+        background-color: $main-color;
+        border-color: $main-color;
+    }
+}
+
+.section-title {
+    color: white;
+    font-size: 32px;
+    font-family: $font-title;
+    font-weight: 900;
+    text-transform: capitalize;
+    padding-top: 25vh;
+    width: 100%;
+    padding-bottom: 2vh;
+    &-line {
+        width: 10%;
+        height: 2px;
+        background-color: $main-color;
+        display: inline-block;
+    }
+    &-text {
+        display: block;
+        width: 100%;
+        color: white;
+        padding: 2vh 10%;
+        font-size: 14px;
+        font-family: $font-logo;
+        font-weight: 300;
+    }
+}

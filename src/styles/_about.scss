@@ -1,0 +1,32 @@
+.bg-2 {
+    background-image: url(../image/bg-2.png);
+    background-size: cover;
+    background-color: #4d3d73;
+}
+.about {
+    padding: 10vh 0;
+    &-img {
+        text-align: center;
+        width: 100%;
+        .ourlogo {
+            width: 60%;
+        }
+    }
+    &-story {
+        text-align: left;
+        &__title {
+            text-transform: uppercase;
+            font-family: $font-title;
+            font-weight: bold;
+            font-size: 22px;
+        }
+        &__text {
+            font-family: $font-logo;
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+    &-video {
+        padding: 2vh;
+    }
+}

@@ -1,0 +1,37 @@
+.bg {
+    background-image: url(../image/bg.png);
+    background-size: cover;
+    background-color: #4d3d73;
+}
+.header {
+    font-family: $font-logo;
+    .logo {
+        text-decoration: none;
+        font-family: $font-logo;
+        &-text {
+            font-size: 30px;
+            font-weight: 100;
+            background: linear-gradient(90deg, $main-color, #4aa3cc);
+            background-clip: text;
+            color: transparent;
+        }
+    }
+    .nav {
+        &-link {
+            color: #ffffff;
+            font-weight: 900;
+            text-transform: uppercase;
+            transition: .5s;
+            &:hover {
+                color: lighten($color: $main-color, $amount: 10%);
+            }
+        }
+        .active {
+            color: $main-color;
+        }
+    }
+    .carousel-item {
+        text-align: center;
+        padding: 13vh 0;
+    }    
+}

@@ -1,0 +1,40 @@
+.expertise {
+    padding: 5vh 0;
+    text-align: center;
+    &-title {
+        color: black;
+        padding-top: 6vh;
+        padding-bottom: 0;
+        margin: 0;
+    }
+    &-text {
+        color: black;
+        font-family: $font-title;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+        margin: 0;
+        padding: 1vh 0;
+    }
+    &-line {
+        margin: 0 auto;
+        background-color: black;
+    }
+    &-list {
+        list-style-type: none;
+        padding: 3vh 0;
+        display: flex;
+        flex-wrap: wrap;
+        font-family: $font-logo;
+        font-size: 14px;
+    }
+    .item-title {
+        font-weight: 900;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        margin: 20px 0;
+    }
+    .item-description {
+        font-weight: 300;
+    }
+}
