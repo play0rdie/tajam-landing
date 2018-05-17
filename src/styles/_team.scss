@@ -1,0 +1,65 @@
+.bg-3 {
+    background-image: url(../image/bg-3.png);
+    background-size: cover;
+    background-color: #4d3d73;
+}
+.team {
+    padding: 5vh 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-title {
+        font-family: $font-title;
+        font-weight: bold;
+        font-size: 22px;
+    }
+    &-description {
+        font-family: $font-title;
+        font-size: 14px;
+    }
+    &-line {
+        width: 10%;
+        height: 2px;
+        background-color: white;
+    }
+    &-people {
+        padding: 2vh 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-join {
+        font-family: $font-logo;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+        margin: 2vh 0;
+        margin-bottom: 4vh;
+    }
+}
+
+.people {
+    &-item {
+        &__img {
+            width: 100%;
+        }
+        &__description {
+            text-align: center;
+        }
+    }
+}
+
+.description {
+    color: #f3f3f5;
+    font-family: $font-logo;
+    font-size: 14px;
+    &-name {
+        font-weight: 900;
+        padding: 1vh;
+        margin: 0;
+    }
+    &-pos {
+        margin: 0;
+        font-weight: 300;
+    }
+}

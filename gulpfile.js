@@ -3,6 +3,7 @@ const sass = require('gulp-sass');
 const del = require('del');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
+const browserSync = require('browser-sync').create();
 
 const paths = {
     input: {
@@ -44,6 +45,16 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('build/js'));
   });
 
+// Static server
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "build"
+        }
+    });
+    browserSync.watch('build/**/**.*').on('change', browserSync.reload);
+});
+
 gulp.task('watch', function () {
     gulp.watch(paths.input.html, gulp.parallel('html'));
     gulp.watch('src/styles/**/*.scss', gulp.parallel('sass'));
@@ -51,4 +62,9 @@ gulp.task('watch', function () {
     gulp.watch(paths.input.js, gulp.parallel('scripts'));
 });
 
-gulp.task('build', gulp.series('clean', gulp.parallel('html', 'sass', 'img', 'scripts'), 'watch'))
+gulp.task('build', 
+            gulp.series('clean', 
+                        gulp.parallel('html', 'sass', 'img', 'scripts'), 
+                        gulp.parallel('watch', 'browser-sync')
+                    )
+        );
