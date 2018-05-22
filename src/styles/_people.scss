@@ -1,0 +1,28 @@
+.bg-4 {
+    background-image: url(../image/bg-4.png);
+    background-size: cover;
+    background-color: #4d3d73;
+}
+
+.people {
+    color: white;
+    font-family: $font-title;
+    &-title {
+        font-size: 100px;
+    }
+    &-text {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        font-size: 16px;
+    }
+    .carousel-item {
+        text-align: center;
+        padding-bottom: 5vh;
+    }
+    .carousel-caption {
+        position: static;
+        right: 0;
+        left: 0;
+    }
+}
