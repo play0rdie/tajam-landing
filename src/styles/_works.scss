@@ -1,0 +1,32 @@
+.works {
+    &-title {
+        padding-top: 5vh;
+        &-item {
+            font-family: $font-title;
+            font-weight: bold;
+            font-size: 22px;
+            text-transform: uppercase;
+        }
+    }
+    &-allproject {
+        padding-top: 5vh;
+        &-item {
+            color: black;
+            font-family: $font-logo;
+            font-weight: 300;
+            font-size: 14px;
+            transition: .5s;
+            &:hover {
+                text-decoration: none;
+                color: $main-color;
+            }
+        }
+    }
+    &-list {
+        padding: 5vh 0;
+    }
+}
+
+.item-img {
+    max-width: 100%;
+}
