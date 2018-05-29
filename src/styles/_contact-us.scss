@@ -1,0 +1,40 @@
+.contact-us {
+    padding: 5vh 0;
+    .title {
+        font-family: $font-title;
+        font-weight: bold;
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-bottom: 3vh;
+    }
+}
+
+.form {
+    &__input {
+        width: 100%;
+        margin-bottom: 1vh;
+        padding: 16px;
+        border: 1px solid #e5e5e5;
+        font-family: $font-logo;
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    &__item {
+        width: 40%;
+        margin: 10px;
+        margin-left: 0; 
+        text-align: center;
+    }
+    &__img {
+        max-width: 100%;
+    }
+}
