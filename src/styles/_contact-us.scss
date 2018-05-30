@@ -12,12 +12,17 @@
 .form {
     &__input {
         width: 100%;
-        margin-bottom: 1vh;
+        height: 43px;
+        margin-bottom: 21px;
         padding: 16px;
         border: 1px solid #e5e5e5;
         font-family: $font-logo;
         font-size: 14px;
         font-weight: 300;
+        &_textarea {
+            height: 198px;
+            vertical-align: top;
+        }
     }
 }
 
